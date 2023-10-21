@@ -8,67 +8,65 @@
 7 Bình hoa
 8 Bình nước
 9 Bình siêu tốc
-10 Bút bi
-11 Bút chì
-12 Bức tranh
-13 Cái bàn chải
-14 Chăn
-15 Cốc nước
-16 Chìa khóa
-17 Dép
-18 Đàn guitar
-19 Đèn bàn
-20 Đèn pin
-21 Đèn trần
-22 Dĩa
-23 Đĩa
-24 Điện thoại
-25 Điều hòa
-26 Điều khiển
-27 Điều khiển điều hòa
-28 Đồng hồ báo thức
-29 Đồng hồ đeo tay
-30 Đồng hồ treo tường
-31 Gấu bông
-32 Ghế
-33 Giày
-34 Giấy
-35 Giường ngủ
-36 Gối
-37 Kem đánh răng
-38 Khẩu trang
-39 Kính mắt
-40 Laptop
-41 Lò vi sóng
-42 Máy ảnh
-43 Máy giặt
-44 Máy sấy
-45 Máy tính bảng
-46 Mũ
-47 Nến
-48 Nhẫn
-49 Nón
-50 Nón bảo hiểm
-51 Nồi cơm điện
-52 Quạt
-53 Quạt trần
-54 Quần
-55 Tai nghe
-56 Tẩy
-57 Thìa
-58 Thùng rác
-59 Thước kẻ
-60 Tivi
-61 Tủ lạnh
-62 Tủ quần áo
-63 Túi xách
-64 Vali
-65 Vòng đeo tay
-66 Xe bus
-67 Xe cứu thương
-68 Xe oto
-69 Xe đạp
-70 Xe taxi
-71 Không có gì 
-72 Khăn
-73 Hộp phấn
+10 Bút
+11 Bức tranh
+12 Cái bàn chải
+13 Chăn
+14 Cốc nước
+15 Chìa khóa
+16 Dép
+17 Đàn guitar
+18 Đèn bàn
+19 Đèn pin
+20 Đèn trần
+21 Dĩa
+22 Đĩa
+23 Điện thoại
+24 Điều hòa
+25 Điều khiển
+26 Điều khiển điều hòa
+27 Đồng hồ báo thức
+28 Đồng hồ đeo tay
+29 Đồng hồ treo tường
+30 Gấu bông
+31 Ghế
+32 Giày
+33 Giường ngủ
+34 Gối
+35 Kem đánh răng
+36 Khẩu trang
+37 Kính mắt
+38 Laptop
+39 Lò vi sóng
+40 Máy ảnh
+41 Máy giặt
+42 Máy sấy
+43 Máy tính bảng
+44 Mũ
+45 Nến
+46 Nhẫn
+47 Nón
+48 Nón bảo hiểm
+49 Nồi cơm điện
+50 Quạt
+51 Quạt trần
+52 Quần
+53 Tai nghe
+54 Tẩy
+55 Thìa
+56 Thùng rác
+57 Thước kẻ
+58 Tivi
+59 Tủ lạnh
+60 Tủ quần áo
+61 Túi xách
+62 Vali
+63 Vòng đeo tay
+64 Xe bus
+65 Xe cứu thương
+66 Xe oto
+67 Xe đạp
+68 Xe taxi
+69 Không có gì 
+70 Khăn
+71 Hộp phấn

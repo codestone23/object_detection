@@ -6,19 +6,27 @@ from keras.preprocessing import image
 
 np.set_printoptions(suppress=True)
 
-# Load the pre-trained model from the file
+# Tải mô hình được đào tạo trước từ tệp
 model = load_model('keras_model.h5', compile=False)
+
 # Camera phone
 # Địa chỉ IP của camera IP Webcam trên điện thoại
-ip_address = "192.168.1.4"
+ip_address = "10.21.32.91"
 
 # Tạo URL kết nối đến camera
 url = f"http://{ip_address}:4747/video"
-cap = cv2.VideoCapture(url)
 
 # Initialize the webcam
 class_labels = open("labels.txt", "r", encoding='UTF8').readlines()
-# cap = cv2.VideoCapture(0)
+
+# Sử dụng camera laptop
+cap = cv2.VideoCapture(0)
+
+# Sử dụng camera điện thoại thông qua phần mềm droidcamapp trên laptop
+# cap = cv2.VideoCapture(1)
+
+# Sử dụng trực tiếp camera điện thoại bằng url
+# cap = cv2.VideoCapture(url)
 
 while True:
     # Capture a frame from the webcam
@@ -40,7 +48,6 @@ while True:
             img_pil = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
             draw = ImageDraw.Draw(img_pil)
             draw.text((10, 30), name[2:], font=font, fill=(0, 255, 0, 1))
-            # img = np.array(img_pil)
             frame = cv2.cvtColor(np.array(img_pil), cv2.COLOR_RGB2BGR)
             print(class_labels[np.argmax(prediction)])
     # Get the class label for the frame
