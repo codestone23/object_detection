@@ -59,7 +59,6 @@ def classify_image(image_path, output_folder):
     class_label = class_names[class_index]
     confidence_score = prediction[0][class_index]
     print("Class:", class_label[2:], end="")
-    print("Image direction: " , image_path)
     print("Confidence Score:", str(np.round(confidence_score * 100))[:-2], "%")
 
     # Cài đặt font
@@ -80,9 +79,9 @@ def classify_image(image_path, output_folder):
 
     # Đường dẫn để lưu hình ảnh mới
     output_path = os.path.join(output_folder, os.path.basename(image_path))
-    if confidence_score > 0.7:
-        # Lưu hình ảnh
-        image.save(output_path)
+
+    # Lưu hình ảnh
+    image.save(output_path)
 
 def classify_webcam(url):
     # Khởi tạo webcam
@@ -133,6 +132,11 @@ root = tk.Tk()
 root.title("Image and Video Classifier")
 
 def on_image_classification():
+    IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".bmp"}
+
+    def is_image_file(filename):
+        _, file_extension = os.path.splitext(filename)
+        return file_extension.lower() in IMAGE_EXTENSIONS
     def choose_images():
         image_paths = filedialog.askopenfilenames(title="Select an Image", filetypes=[("Image files", "*.jpg *.jpeg *.png *.gif *.bmp")])
         if image_paths:
@@ -142,7 +146,8 @@ def on_image_classification():
         image_folder = filedialog.askdirectory(title="Select a Folder")
         for filename in os.listdir(image_folder):
             image_path = os.path.join(image_folder, filename)
-            classify_image(image_path, 'data/input')
+            if is_image_file(filename):
+                classify_image(image_path, 'data/input')
     def on_return():
         main_menu_frame.pack()
         image_frame.pack_forget()
